@@ -3,5 +3,11 @@
   "devCommand": "pnpm run dev",
   "installCommand": "pnpm install",
   "framework": null,
-  "outputDirectory": "build/client"
+  "outputDirectory": "build/client",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
